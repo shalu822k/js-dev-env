@@ -2,6 +2,7 @@
   "name": "javascript-development-environment",
   "version": "1.0.0",
   "description": "JavaScript development environment Pluralsight course by Cory House",
+  "private": true,
   "scripts": {
     "prestart": "babel-node buildScripts/startMessage.js",
     "start": "npm-run-all --parallel security-check open:src",
@@ -13,10 +14,13 @@
   "author": "VaishK",
   "license": "MIT",
   "dependencies": {
+    "lodash": "^4.17.10",
     "whatwg-fetch": "^2.0.4"
   },
   "devDependencies": {
+    "ajv": "^6.0.0",
     "babel-cli": "^6.26.0",
+    "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.6.1",
     "babel-register": "^6.26.0",
     "chai": "^4.1.2",
@@ -25,6 +29,7 @@
     "compression": "^1.7.2",
     "console-control-strings": "^1.1.0",
     "cross-env": "^5.1.4",
+    "css-loader": "^0.28.11",
     "express": "^4.16.3",
     "jsdom": "^11.9.0",
     "json-schema-faker": "^0.5.0-rc15",
@@ -33,11 +38,16 @@
     "minipass": "^2.2.4",
     "mocha": "^5.1.1",
     "nock": "^9.2.5",
+    "npm": "^6.0.0",
     "npm-run-all": "^4.1.2",
     "nsp": "^3.2.1",
     "numeral": "^2.0.6",
     "open": "0.0.5",
     "rifraf": "^2.0.3",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.6.0",
+    "webpack-cli": "^2.0.15",
+    "webpack-dev-middleware": "^3.1.2",
     "yallist": "^3.0.2"
   }
 }
