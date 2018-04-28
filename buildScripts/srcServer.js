@@ -1,6 +1,6 @@
 import express from 'express';
 import path from 'path';
-import open from 'open';
+import chalk from 'chalk';
 import webpack from 'webpack';
 import webpackDevMiddleware from 'webpack-dev-middleware';
 import config from '../webpack.config.dev';
@@ -35,6 +35,7 @@ app.listen(port, function(err) {
   }
   else
   {
-    open('http://localhost:' + port);
+    console.log(chalk.blue("Open http://localhost:3000/"));
+    //open('http://localhost:' + port);
   }
 });
